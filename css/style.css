@@ -1,2 +1,88 @@
 @import "./base.css";
 @import "./container.css";
+
+body {
+  background-color: rgb(217, 232, 255);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.text_item {
+  max-width: 70%;
+}
+
+.text {
+  font-size: 14px;
+  color:rgb(50, 50, 50);
+  margin: 20px 0;
+}
+
+.action_list, .plans_list{
+    background-color: rgb(64, 126, 147);
+    border-radius: 15px;;
+}
+
+.list {
+    display: flex;
+    gap: 20px;
+    flex-basis: 250px;
+}
+
+.list_item_text{
+    padding: 8px;
+    border-top: 2px solid black ;
+}
+
+.list_item{
+    background-color: rgb(12, 51, 131);
+    overflow: hidden;
+}
+
+.list_item_title{
+    margin:8px;
+    font-size: 18px;
+    color:white;    
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    padding: 20px;
+    flex-direction: column;
+  }
+  .list{
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 20px;
+    flex-direction: column;
+  }
+  .list{
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 1024px;
+    padding: 20px;
+    flex-direction: row;
+  }
+.list{
+    flex-direction: column;
+  }
+}
